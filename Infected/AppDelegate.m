@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    NSArray *peripheralsManagerIdentifiers = launchOptions[UIApplicationLaunchOptionsBluetoothPeripheralsKey];
+    ViewController *viewController = (ViewController *) self.window.rootViewController;
+    
+    for (NSString* peripheralManagerID in peripheralsManagerIdentifiers) {
+        if (peripheralManagerID == PERIPHERAL_MANAGER_IDENTIFIER) {
+            NSLog(@"Restoring peripherals");
+            CBPeripheralManager *restoredManager = [[CBPeripheralManager alloc]initWithDelegate:viewController queue:nil options:@{CBPeripheralManagerOptionRestoreIdentifierKey:PERIPHERAL_MANAGER_IDENTIFIER}];
+            viewController.myPeripheralManager = restoredManager;
+        }
+    }
+    
+    
     return YES;
 }
 

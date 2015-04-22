@@ -14,6 +14,10 @@
 		C92720DE1AE7E51D0071148C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C92720DD1AE7E51D0071148C /* Images.xcassets */; };
 		C92720E11AE7E51D0071148C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C92720DF1AE7E51D0071148C /* LaunchScreen.xib */; };
 		C92720ED1AE7E51D0071148C /* InfectedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C92720EC1AE7E51D0071148C /* InfectedTests.m */; };
+		C92721001AE7F6F40071148C /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92720FD1AE7F6CF0071148C /* ResearchKit.framework */; };
+		C92721011AE7F6F40071148C /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C92720FD1AE7F6CF0071148C /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C92721061AE7F9280071148C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92721051AE7F9280071148C /* CoreBluetooth.framework */; };
+		C92721091AE7FE110071148C /* Encounter.m in Sources */ = {isa = PBXBuildFile; fileRef = C92721081AE7FE110071148C /* Encounter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +28,42 @@
 			remoteGlobalIDString = C92720CC1AE7E51D0071148C;
 			remoteInfo = Infected;
 		};
+		C92720FC1AE7F6CF0071148C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C92720F61AE7F6CE0071148C /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B183A5951A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+		C92720FE1AE7F6CF0071148C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C92720F61AE7F6CE0071148C /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
+			remoteInfo = ResearchKitTests;
+		};
+		C92721021AE7F6F40071148C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C92720F61AE7F6CE0071148C /* ResearchKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B183A4731A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C92721041AE7F6F40071148C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C92721011AE7F6F40071148C /* ResearchKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C92720CD1AE7E51D0071148C /* Infected.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Infected.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +79,10 @@
 		C92720E61AE7E51D0071148C /* InfectedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfectedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C92720EB1AE7E51D0071148C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C92720EC1AE7E51D0071148C /* InfectedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfectedTests.m; sourceTree = "<group>"; };
+		C92720F61AE7F6CE0071148C /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ../ResearchKit/ResearchKit.xcodeproj; sourceTree = "<group>"; };
+		C92721051AE7F9280071148C /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		C92721071AE7FE110071148C /* Encounter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Encounter.h; sourceTree = "<group>"; };
+		C92721081AE7FE110071148C /* Encounter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Encounter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +90,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C92721061AE7F9280071148C /* CoreBluetooth.framework in Frameworks */,
+				C92721001AE7F6F40071148C /* ResearchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +108,8 @@
 		C92720C41AE7E51D0071148C = {
 			isa = PBXGroup;
 			children = (
+				C92721051AE7F9280071148C /* CoreBluetooth.framework */,
+				C92720F61AE7F6CE0071148C /* ResearchKit.xcodeproj */,
 				C92720CF1AE7E51D0071148C /* Infected */,
 				C92720E91AE7E51D0071148C /* InfectedTests */,
 				C92720CE1AE7E51D0071148C /* Products */,
@@ -86,6 +133,8 @@
 				C92720D71AE7E51D0071148C /* ViewController.h */,
 				C92720D81AE7E51D0071148C /* ViewController.m */,
 				C92720DA1AE7E51D0071148C /* Main.storyboard */,
+				C92721071AE7FE110071148C /* Encounter.h */,
+				C92721081AE7FE110071148C /* Encounter.m */,
 				C92720DD1AE7E51D0071148C /* Images.xcassets */,
 				C92720DF1AE7E51D0071148C /* LaunchScreen.xib */,
 				C92720D01AE7E51D0071148C /* Supporting Files */,
@@ -119,6 +168,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C92720F71AE7F6CE0071148C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C92720FD1AE7F6CF0071148C /* ResearchKit.framework */,
+				C92720FF1AE7F6CF0071148C /* ResearchKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,10 +187,12 @@
 				C92720C91AE7E51D0071148C /* Sources */,
 				C92720CA1AE7E51D0071148C /* Frameworks */,
 				C92720CB1AE7E51D0071148C /* Resources */,
+				C92721041AE7F6F40071148C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C92721031AE7F6F40071148C /* PBXTargetDependency */,
 			);
 			name = Infected;
 			productName = Infected;
@@ -167,6 +227,12 @@
 				TargetAttributes = {
 					C92720CC1AE7E51D0071148C = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = T8KZZH4KS6;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					C92720E51AE7E51D0071148C = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -185,6 +251,12 @@
 			mainGroup = C92720C41AE7E51D0071148C;
 			productRefGroup = C92720CE1AE7E51D0071148C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C92720F71AE7F6CE0071148C /* Products */;
+					ProjectRef = C92720F61AE7F6CE0071148C /* ResearchKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C92720CC1AE7E51D0071148C /* Infected */,
@@ -192,6 +264,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C92720FD1AE7F6CF0071148C /* ResearchKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ResearchKit.framework;
+			remoteRef = C92720FC1AE7F6CF0071148C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C92720FF1AE7F6CF0071148C /* ResearchKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ResearchKitTests.xctest;
+			remoteRef = C92720FE1AE7F6CF0071148C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C92720CB1AE7E51D0071148C /* Resources */ = {
@@ -219,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C92720D91AE7E51D0071148C /* ViewController.m in Sources */,
+				C92721091AE7FE110071148C /* Encounter.m in Sources */,
 				C92720D61AE7E51D0071148C /* AppDelegate.m in Sources */,
 				C92720D31AE7E51D0071148C /* main.m in Sources */,
 			);
@@ -239,6 +329,11 @@
 			isa = PBXTargetDependency;
 			target = C92720CC1AE7E51D0071148C /* Infected */;
 			targetProxy = C92720E71AE7E51D0071148C /* PBXContainerItemProxy */;
+		};
+		C92721031AE7F6F40071148C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ResearchKit;
+			targetProxy = C92721021AE7F6F40071148C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -346,9 +441,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Infected/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -356,9 +455,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Infected/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

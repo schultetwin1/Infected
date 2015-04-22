@@ -6,10 +6,15 @@
 //
 //
 
+#import <CoreBluetooth/CoreBluetooth.h>
+
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+extern NSString *const PERIPHERAL_MANAGER_IDENTIFIER;
 
+@interface ViewController : UIViewController <CBPeripheralManagerDelegate>
+
+@property (strong, nonatomic) CBPeripheralManager *myPeripheralManager;
 
 @end
 
