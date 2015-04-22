@@ -20,6 +20,7 @@
     // Override point for customization after application launch.
     
     NSArray *peripheralsManagerIdentifiers = launchOptions[UIApplicationLaunchOptionsBluetoothPeripheralsKey];
+    NSArray *centralsManagerIdentifiers = launchOptions[UIApplicationLaunchOptionsBluetoothCentralsKey];
     ViewController *viewController = (ViewController *) self.window.rootViewController;
     
     for (NSString* peripheralManagerID in peripheralsManagerIdentifiers) {
@@ -27,6 +28,14 @@
             NSLog(@"Restoring peripherals");
             CBPeripheralManager *restoredManager = [[CBPeripheralManager alloc]initWithDelegate:viewController queue:nil options:@{CBPeripheralManagerOptionRestoreIdentifierKey:PERIPHERAL_MANAGER_IDENTIFIER}];
             viewController.myPeripheralManager = restoredManager;
+        }
+    }
+    
+    for (NSString* centralManagerID in centralsManagerIdentifiers) {
+        if (centralManagerID == CENTRAL_MANAGER_IDENTIFIER) {
+            NSLog(@"Restoring centrals");
+            CBCentralManager *restoredManager = [[CBCentralManager alloc]initWithDelegate:viewController queue:nil options:@{CBCentralManagerOptionRestoreIdentifierKey:CENTRAL_MANAGER_IDENTIFIER}];
+            viewController.myCentralManager = restoredManager;
         }
     }
     

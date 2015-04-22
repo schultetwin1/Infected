@@ -18,6 +18,7 @@
 		C92721011AE7F6F40071148C /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C92720FD1AE7F6CF0071148C /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C92721061AE7F9280071148C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92721051AE7F9280071148C /* CoreBluetooth.framework */; };
 		C92721091AE7FE110071148C /* Encounter.m in Sources */ = {isa = PBXBuildFile; fileRef = C92721081AE7FE110071148C /* Encounter.m */; };
+		C927210F1AE864D90071148C /* BleGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = C927210E1AE864D90071148C /* BleGraph.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,8 @@
 		C92721051AE7F9280071148C /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		C92721071AE7FE110071148C /* Encounter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Encounter.h; sourceTree = "<group>"; };
 		C92721081AE7FE110071148C /* Encounter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Encounter.m; sourceTree = "<group>"; };
+		C927210D1AE864D90071148C /* BleGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BleGraph.h; sourceTree = "<group>"; };
+		C927210E1AE864D90071148C /* BleGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BleGraph.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,8 @@
 				C92720D51AE7E51D0071148C /* AppDelegate.m */,
 				C92720D71AE7E51D0071148C /* ViewController.h */,
 				C92720D81AE7E51D0071148C /* ViewController.m */,
+				C927210D1AE864D90071148C /* BleGraph.h */,
+				C927210E1AE864D90071148C /* BleGraph.m */,
 				C92720DA1AE7E51D0071148C /* Main.storyboard */,
 				C92721071AE7FE110071148C /* Encounter.h */,
 				C92721081AE7FE110071148C /* Encounter.m */,
@@ -310,6 +315,7 @@
 				C92720D91AE7E51D0071148C /* ViewController.m in Sources */,
 				C92721091AE7FE110071148C /* Encounter.m in Sources */,
 				C92720D61AE7E51D0071148C /* AppDelegate.m in Sources */,
+				C927210F1AE864D90071148C /* BleGraph.m in Sources */,
 				C92720D31AE7E51D0071148C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
