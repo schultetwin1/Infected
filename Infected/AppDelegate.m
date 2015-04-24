@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "LibInfected/LibInfected.h"
 
 @interface AppDelegate ()
 

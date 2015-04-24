@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		C92720D31AE7E51D0071148C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C92720D21AE7E51D0071148C /* main.m */; };
 		C92720D61AE7E51D0071148C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C92720D51AE7E51D0071148C /* AppDelegate.m */; };
-		C92720D91AE7E51D0071148C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C92720D81AE7E51D0071148C /* ViewController.m */; };
 		C92720DC1AE7E51D0071148C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C92720DA1AE7E51D0071148C /* Main.storyboard */; };
 		C92720DE1AE7E51D0071148C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C92720DD1AE7E51D0071148C /* Images.xcassets */; };
 		C92720E11AE7E51D0071148C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C92720DF1AE7E51D0071148C /* LaunchScreen.xib */; };
 		C92720ED1AE7E51D0071148C /* InfectedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C92720EC1AE7E51D0071148C /* InfectedTests.m */; };
 		C92721061AE7F9280071148C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92721051AE7F9280071148C /* CoreBluetooth.framework */; };
-		C92721091AE7FE110071148C /* Encounter.m in Sources */ = {isa = PBXBuildFile; fileRef = C92721081AE7FE110071148C /* Encounter.m */; };
-		C92721711AE9DDE00071148C /* libLibInfected.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C927216E1AE9DD870071148C /* libLibInfected.a */; };
+		C92721711AE9DDE00071148C /* libLibInfected.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C927216E1AE9DD870071148C /* libLibInfected.a */; settings = {ATTRIBUTES = (Required, ); }; };
+		C92721741AE9EA990071148C /* InfectedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C92721731AE9EA990071148C /* InfectedTableViewController.m */; };
+		C92721771AE9EB420071148C /* Sighting.m in Sources */ = {isa = PBXBuildFile; fileRef = C92721761AE9EB420071148C /* Sighting.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,8 +62,6 @@
 		C92720D21AE7E51D0071148C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C92720D41AE7E51D0071148C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C92720D51AE7E51D0071148C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C92720D71AE7E51D0071148C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C92720D81AE7E51D0071148C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C92720DB1AE7E51D0071148C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C92720DD1AE7E51D0071148C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C92720E01AE7E51D0071148C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -71,9 +69,11 @@
 		C92720EB1AE7E51D0071148C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C92720EC1AE7E51D0071148C /* InfectedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfectedTests.m; sourceTree = "<group>"; };
 		C92721051AE7F9280071148C /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
-		C92721071AE7FE110071148C /* Encounter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Encounter.h; sourceTree = "<group>"; };
-		C92721081AE7FE110071148C /* Encounter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Encounter.m; sourceTree = "<group>"; };
 		C92721681AE9DD870071148C /* LibInfected.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LibInfected.xcodeproj; path = ../LibInfected/LibInfected.xcodeproj; sourceTree = "<group>"; };
+		C92721721AE9EA990071148C /* InfectedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfectedTableViewController.h; sourceTree = "<group>"; };
+		C92721731AE9EA990071148C /* InfectedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfectedTableViewController.m; sourceTree = "<group>"; };
+		C92721751AE9EB420071148C /* Sighting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sighting.h; path = ../Sighting.h; sourceTree = "<group>"; };
+		C92721761AE9EB420071148C /* Sighting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sighting.m; path = ../Sighting.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,16 +119,16 @@
 		C92720CF1AE7E51D0071148C /* Infected */ = {
 			isa = PBXGroup;
 			children = (
+				C92721751AE9EB420071148C /* Sighting.h */,
+				C92721761AE9EB420071148C /* Sighting.m */,
 				C92720D41AE7E51D0071148C /* AppDelegate.h */,
 				C92720D51AE7E51D0071148C /* AppDelegate.m */,
-				C92720D71AE7E51D0071148C /* ViewController.h */,
-				C92720D81AE7E51D0071148C /* ViewController.m */,
 				C92720DA1AE7E51D0071148C /* Main.storyboard */,
-				C92721071AE7FE110071148C /* Encounter.h */,
-				C92721081AE7FE110071148C /* Encounter.m */,
 				C92720DD1AE7E51D0071148C /* Images.xcassets */,
 				C92720DF1AE7E51D0071148C /* LaunchScreen.xib */,
 				C92720D01AE7E51D0071148C /* Supporting Files */,
+				C92721721AE9EA990071148C /* InfectedTableViewController.h */,
+				C92721731AE9EA990071148C /* InfectedTableViewController.m */,
 			);
 			path = Infected;
 			sourceTree = "<group>";
@@ -297,8 +297,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C92720D91AE7E51D0071148C /* ViewController.m in Sources */,
-				C92721091AE7FE110071148C /* Encounter.m in Sources */,
+				C92721771AE9EB420071148C /* Sighting.m in Sources */,
+				C92721741AE9EA990071148C /* InfectedTableViewController.m in Sources */,
 				C92720D61AE7E51D0071148C /* AppDelegate.m in Sources */,
 				C92720D31AE7E51D0071148C /* main.m in Sources */,
 			);
@@ -503,6 +503,7 @@
 				C92720F21AE7E51D0071148C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C92720F31AE7E51D0071148C /* Build configuration list for PBXNativeTarget "InfectedTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +512,7 @@
 				C92720F51AE7E51D0071148C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

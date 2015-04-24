@@ -7,20 +7,20 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>45E7F672-9140-477C-A2DC-628B1417A24C</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Infected</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>9CF6181E3789E3853840089C16D4B9FDDB9B31E2</key>
-		<string>https://github.com/ResearchKit/ResearchKit.git</string>
+		<key>8E359FC6C3166C150D73C8BE665639017F4C7D4E</key>
+		<string>github.com:schultetwin1/LibInfected.git</string>
 		<key>BF8938F5F5E15718697CFFC2F04E1D1BD73F3D7E</key>
 		<string>github.com:schultetwin1/Infected.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Infected.xcodeproj/project.xcworkspace</string>
+	<string>Infected.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>9CF6181E3789E3853840089C16D4B9FDDB9B31E2</key>
-		<string>../../../ResearchKit</string>
+		<key>8E359FC6C3166C150D73C8BE665639017F4C7D4E</key>
+		<string>../../../LibInfected</string>
 		<key>BF8938F5F5E15718697CFFC2F04E1D1BD73F3D7E</key>
 		<string>../..</string>
 	</dict>
@@ -44,9 +44,9 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>9CF6181E3789E3853840089C16D4B9FDDB9B31E2</string>
+			<string>8E359FC6C3166C150D73C8BE665639017F4C7D4E</string>
 			<key>IDESourceControlWCCName</key>
-			<string>ResearchKit</string>
+			<string>LibInfected</string>
 		</dict>
 	</array>
 </dict>
