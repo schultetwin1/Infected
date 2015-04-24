@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -27,25 +26,14 @@
                                     <action selector="start:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="EG5-b3-f17"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="OEI-0P-J9D">
-                                <rect key="frame" x="16" y="451" width="568" height="29"/>
-                                <segments>
-                                    <segment title="Healthy"/>
-                                    <segment title="Infected"/>
-                                </segments>
-                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="OEI-0P-J9D" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="2um-dy-eus"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="OEI-0P-J9D" secondAttribute="bottom" constant="121" id="54E-NZ-CiM"/>
                             <constraint firstItem="26H-Aq-GXw" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="W99-4k-SG5"/>
-                            <constraint firstItem="OEI-0P-J9D" firstAttribute="centerX" secondItem="26H-Aq-GXw" secondAttribute="centerX" id="XQN-YL-gCx"/>
                             <constraint firstItem="26H-Aq-GXw" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="wfb-Xf-gJE"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="healthyInfectedSegment" destination="OEI-0P-J9D" id="jte-tR-1Qq"/>
                         <outlet property="startBtn" destination="26H-Aq-GXw" id="yfd-4u-JD4"/>
                     </connections>
                 </viewController>

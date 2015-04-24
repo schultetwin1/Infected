@@ -6,17 +6,13 @@
 //
 //
 
-#import <CoreBluetooth/CoreBluetooth.h>
-
 #import <UIKit/UIKit.h>
 
-extern NSString *const PERIPHERAL_MANAGER_IDENTIFIER;
-extern NSString *const CENTRAL_MANAGER_IDENTIFIER;
+#import "LibInfected/LibInfected.h"
 
-@interface ViewController : UIViewController <CBPeripheralManagerDelegate, CBCentralManagerDelegate, CBPeripheralDelegate>
+@interface ViewController : UIViewController <LibInfectedDelgate>
 
-@property (strong, nonatomic) CBPeripheralManager *myPeripheralManager;
-@property (strong, nonatomic) CBCentralManager *myCentralManager;
+@property (strong, nonatomic) LibInfected* myLibInfected;
 
 @end
 
